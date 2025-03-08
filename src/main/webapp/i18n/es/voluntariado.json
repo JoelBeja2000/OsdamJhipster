@@ -1,0 +1,28 @@
+{
+  "osdamApp": {
+    "voluntariado": {
+      "home": {
+        "title": "Voluntariados",
+        "refreshListLabel": "Refrescar lista",
+        "createLabel": "Crear nuevo Voluntariado",
+        "createOrEditLabel": "Crear o editar Voluntariado",
+        "notFound": "Ningún Voluntariados encontrado"
+      },
+      "created": "Un nuevo Voluntariado ha sido creado con el identificador {{ param }}",
+      "updated": "Un Voluntariado ha sido actualizado con el identificador {{ param }}",
+      "deleted": "Un Voluntariado ha sido eliminado con el identificador {{ param }}",
+      "delete": {
+        "question": "¿Seguro que quiere eliminar Voluntariado {{ id }}?"
+      },
+      "detail": {
+        "title": "Voluntariado"
+      },
+      "id": "ID",
+      "name": "Name",
+      "fechaInicio": "Fecha Inicio",
+      "fechaFin": "Fecha Fin",
+      "inscripciones": "Inscripciones",
+      "departamento": "Departamento"
+    }
+  }
+}

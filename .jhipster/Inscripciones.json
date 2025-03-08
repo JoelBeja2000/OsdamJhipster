@@ -1,0 +1,25 @@
+{
+  "annotations": {
+    "changelogDate": "20250308010311"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Inscripciones",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "voluntariado",
+      "otherEntityRelationshipName": "inscripciones",
+      "relationshipName": "voluntariado",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

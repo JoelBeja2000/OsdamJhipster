@@ -1,0 +1,25 @@
+{
+  "annotations": {
+    "changelogDate": "20250308010309"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    }
+  ],
+  "name": "Departamento",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "voluntariado",
+      "otherEntityRelationshipName": "departamento",
+      "relationshipName": "voluntariado",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}
