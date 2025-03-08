@@ -1,0 +1,32 @@
+
+entity Departamento {
+	name String
+}
+
+entity Voluntariado {
+	name String 
+    fechaInicio Instant
+    fechaFin Instant
+}
+
+entity Inscripciones {
+	name String 
+    
+}
+
+
+
+
+relationship OneToMany {
+	Departamento to Voluntariado
+    Voluntariado to Inscripciones
+}
+
+
+
+paginate Departamento, Voluntariado, Inscripciones with pagination
+
+
+
+service all with serviceImpl
+

@@ -1,0 +1,15 @@
+{
+  "configurations": [
+    {
+      "type": "java",
+      "name": "Spring Boot-OsdamApp<osdam>",
+      "request": "launch",
+      "cwd": "${workspaceFolder}",
+      "mainClass": "com.osdam.osdam.OsdamApp",
+      "projectName": "osdam",
+      "args": "",
+      "envFile": "${workspaceFolder}/.env",
+      "console": "internalConsole"
+    }
+  ]
+}

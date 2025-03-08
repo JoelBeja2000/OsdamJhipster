@@ -1,0 +1,40 @@
+{
+  "annotations": {
+    "changelogDate": "20250308010310"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "fechaInicio",
+      "fieldType": "Instant"
+    },
+    {
+      "fieldName": "fechaFin",
+      "fieldType": "Instant"
+    }
+  ],
+  "name": "Voluntariado",
+  "pagination": "pagination",
+  "relationships": [
+    {
+      "otherEntityName": "inscripciones",
+      "otherEntityRelationshipName": "voluntariado",
+      "relationshipName": "inscripciones",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "departamento",
+      "otherEntityRelationshipName": "voluntariado",
+      "relationshipName": "departamento",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no",
+  "service": "serviceImpl"
+}

@@ -1,3 +1,4 @@
+// src/main/java/com/osdam/osdam/domain/Authority.java
 package com.osdam.osdam.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
@@ -30,6 +31,11 @@ public class Authority implements Serializable, Persistable<String> {
     @org.springframework.data.annotation.Transient
     @Transient
     private boolean isPersisted;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "departamento_id")
+    @JsonIgnoreProperties(value = { "voluntariados", "authoritys" }, allowSetters = true)
+    private Departamento departamento;
 
     // jhipster-needle-entity-add-field - JHipster will add fields here
 
@@ -66,6 +72,19 @@ public class Authority implements Serializable, Persistable<String> {
 
     public Authority setIsPersisted() {
         this.isPersisted = true;
+        return this;
+    }
+
+    public Departamento getDepartamento() {
+        return this.departamento;
+    }
+
+    public void setDepartamento(Departamento departamento) {
+        this.departamento = departamento;
+    }
+
+    public Authority departamento(Departamento departamento) {
+        this.setDepartamento(departamento);
         return this;
     }
 

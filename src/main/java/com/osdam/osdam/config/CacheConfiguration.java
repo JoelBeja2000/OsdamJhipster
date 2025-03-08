@@ -50,6 +50,11 @@ public class CacheConfiguration {
             createCache(cm, com.osdam.osdam.domain.User.class.getName());
             createCache(cm, com.osdam.osdam.domain.Authority.class.getName());
             createCache(cm, com.osdam.osdam.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.osdam.osdam.domain.Departamento.class.getName());
+            createCache(cm, com.osdam.osdam.domain.Departamento.class.getName() + ".voluntariados");
+            createCache(cm, com.osdam.osdam.domain.Voluntariado.class.getName());
+            createCache(cm, com.osdam.osdam.domain.Voluntariado.class.getName() + ".inscripciones");
+            createCache(cm, com.osdam.osdam.domain.Inscripciones.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
